@@ -1,0 +1,95 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Applying a modern sans-serif font to all elements */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Set default text color */
+body {
+    color: #333; /* Adjust to your preference */
+}
+
+/* Apply box-sizing border-box to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Optionally set a background color */
+body {
+    background-color: #f4f4f4; /* Adjust to your preference */
+}
+
+/* Optionally set default styles for links */
+a {
+    color: #007bff; /* Adjust link color as needed */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.grid-container {
+    display: grid;
+    grid: repeat(7, auto)/repeat(7, auto);
+    ;
+    ;
+    grid-gap: 4px; /* Optional: Add gap between grid items */
+    background-color: #f4f9fb; /* Soft blue background */
+    padding: 20px; /* Optional: Add some padding for spacing */
+}
+
+/* Add additional styling for grid items if needed */
+.grid-item {
+    background-color: #d2eafc; /* Light blue background for grid items */
+    border-radius: 1px; /* Optional: Add some rounded corners */
+    padding: 10px; /* Optional: Add padding for spacing inside grid items */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+/* Style for select dropdown */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent; /* Set background to transparent */
+    border: none;
+   
+    padding: 8px 12px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Style for select dropdown when it's opened */
+select:focus {
+    outline: none;
+    border-color: #007bff; /* Change color on focus */
+}
+
+/* Style for dropdown arrow */
+select::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the arrow is not clickable */
+}
+
+/* Style for dropdown options */
+option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style for dropdown options when hovered */
+option:hover {
+    background-color: #007bff; /* Change color on hover */
+    color: #fff;
+}
